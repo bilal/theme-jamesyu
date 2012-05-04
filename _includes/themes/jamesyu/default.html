@@ -11,8 +11,8 @@
   <title>{{ page.title }}</title> 
   <meta name="author" content="YOUR_NAME" />
   <link href='http://fonts.googleapis.com/css?family=Lato:light,regular,bold' rel='stylesheet' type='text/css'>
-  <link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css" /> 
-  <link href="/css/main.css" media="screen" rel="stylesheet" type="text/css" /> 
+  <link href="{{ ASSET_PATH }}/css/reset.css" media="screen" rel="stylesheet" type="text/css" /> 
+  <link href="{{ ASSET_PATH }}/css/main.css" media="screen" rel="stylesheet" type="text/css" /> 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" title="RSS feed">
 </head> 
  
@@ -51,7 +51,7 @@
                 <div class="about">
                     <h3><a href="/about/">About Me</a></h3>
                     
-                    <a href="/about/"><img src="/images/me_small.png" alt="ME" /></a>
+                    <a href="/about/"><img src="{{ ASSET_PATH }}/images/me_small.png" alt="ME" /></a>
                     <div>
                         This is yet a short description of myself. Try to keep it short. <a href="/about/">Read more</a>
                     </div>
