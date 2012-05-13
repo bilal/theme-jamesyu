@@ -25,6 +25,11 @@ Quick Setup
   ```
   $ rake theme:install git="git://github.com/bilal/theme-jamesyu.git"
   ```
+* Copy `about.html` from theme:
+
+  ```
+  $ cp _includes/themes/jamesyu/about.html .
+  ```
 * Start Jekyll locally:
 
   ```
