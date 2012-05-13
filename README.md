@@ -23,7 +23,7 @@ Quick Setup
 * Install the theme:
 
   ```
-  $ rake theme:install git="https://bilal@github.com/bilal/theme-jamesyu.git"
+  $ rake theme:install git="git://github.com/bilal/theme-jamesyu.git"
   ```
 * Start Jekyll locally:
 
