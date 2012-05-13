@@ -5,16 +5,21 @@
         {{ content }}
     </div>
     
-    <div class="meta">
-        Posted on <a href="{{ page.url }}">{{ page.date |
-        date_to_string }}</a>
-        {% unless page.tags == empty %}
-        <h4>Tags</h4>
-        <ul class="tag_box">
-          {% assign tags_list = page.tags %}
-          {% include JB/tags_list %}
+    <div class="meta">    
+        <ul>
+          Published: {{ page.date | date_to_string }}<br/>
         </ul>
-        {% endunless %}  
+	<ul class="list-category list-linear">
+	  <li class="list-head">category: </li>
+			{% assign categories_list = page.categories %}
+			{% include JB/categories_list %}
+	</ul>
+	<ul class="list-tag list-linear">
+		<li class="list-head">tags: </li>
+			{% assign tags_list = page.tags %}
+			{% include JB/tags_list %}
+	</ul>
     </div>
+
     {% include JB/comments %}
 </div>
